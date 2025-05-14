@@ -67,7 +67,7 @@ then
             echo "Deleting file: $file" &>> $LOG_FILE_NAME
             rm -rf $file
             echo "Deleted file: $file"
-        done <<< $FILES_TO_DELETE
+        done <<< $FILES
     else
         echo -e "$R Error:: $N Failed to create Zip file"    
         exit 1
