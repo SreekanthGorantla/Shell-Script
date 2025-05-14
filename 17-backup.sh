@@ -24,7 +24,7 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 #         echo -e "$2 ... $G SUCCESS $N"
 #     fi
 # }
-
+mkdir -p $LOGS_FOLDER
 USAGE(){
     #echo -e "$R USAGE:: $N sh 17-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS(optional)>"
     echo -e "$R USAGE:: $N sh backup <SOURCE_DIR> <DEST_DIR> <DAYS(optional)>"
@@ -48,7 +48,7 @@ then
     exit 1
 fi
 
-mkdir -p $LOGS_FOLDER
+
 echo "Script started executing at: $TIMESTAMP" &>> $LOG_FILE_NAME
 
 FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
