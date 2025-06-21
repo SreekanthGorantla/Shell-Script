@@ -11,7 +11,7 @@
 
 echo "What is today of a week? "
 read WEEK
-if [ $WEEK -ne Sunday ]
+if [ $WEEK -ne "Sunday" ]
 then
     echo "You have to go to School."
 else
