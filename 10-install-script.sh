@@ -12,7 +12,7 @@ dnf list installed mysql
 
 if [ $? -ne 0 ] # If not installed
 then
-    dnf install my mysql -y
+    dnf install mysql -y
     if [ $? -ne 0 ]
     then
         echo "Installing MySQL ...FAILURE"
@@ -46,7 +46,7 @@ then
         echo "Installing Git ... SUCCESS"
     fi
 else
-    echo "Hit is already ... INSTALLED"
+    echo "Git is already ... INSTALLED"
 fi
 
 # if [ $? -ne 0 ]
