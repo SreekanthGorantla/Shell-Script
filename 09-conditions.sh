@@ -11,8 +11,8 @@
 
 echo "What is today of a week? "
 read WEEK
-WEEK=$(echo "$WEEK" | tr '[:upper:]' '[:lower:]')
-if [ "$WEEK" -ne "sunday" ]
+#WEEK=$(echo "$WEEK" | tr '[:upper:]' '[:lower:]')
+if [ "$WEEK" != "sunday" ]
 then
     echo "You have to go to School."
 else
