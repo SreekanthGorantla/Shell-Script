@@ -42,3 +42,5 @@ do
         echo -e "$package is already $Y ... INSTALLED $N"
     fi
 done
+
+# sh 15-loops.sh git nginx mysql gcc etc.. 
