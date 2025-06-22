@@ -26,11 +26,11 @@ VALIDATE(){
 }
 
 CHECK_ROOT(){
-if [ $USERID -ne 0 ]
-then
-    echo "Error:: You must have suco access to execute this command"
-    exit 1
-fi
+    if [ $USERID -ne 0 ]
+    then
+        echo "Error:: You must have suco access to execute this command"
+        exit 1
+    fi
 }
 
 mkdir -p $LOG_FOLDER
